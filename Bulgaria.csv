@@ -1,0 +1,5 @@
+﻿Vaccination's effects on Covid,Correlation,P-value (ADF test),Granger Causality
+vaccinations vs new cases ,-0.35,0.34,Yes
+vaccinations vs hospitalization,-0.52,0.31,Yes
+vaccinations vs ICU,-0.52,0.33,Yes
+vaccination vs new deaths,-0.54,0.11,unsure
