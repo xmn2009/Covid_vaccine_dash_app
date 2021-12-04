@@ -49,10 +49,10 @@ app.layout = html.Div(children=[
                                  children='Total Vaccinations vs. New Cases/Hospital Patients/ICU Patients '
                                           'were tested'),
                          html.Li(style={'margin': '0.3rem'},
-                                 children='Nine countries were selected, time range were from Jan - Sep 2021'),
-                         html.Li(style={'margin': '0.3rem'}, children='Impact of Delta Variant were analyzed'),
-                         html.Li(style={'margin': '0.3rem'}, children='Immune of age groups/vaccine brand '
-                                                                      'were analyzed'),
+                                 children='Nine countries were selected, time range was from Jan - Sep 2021'),
+                         html.Li(style={'margin': '0.3rem'}, children='Impact of Delta Variant was analyzed'),
+                         html.Li(style={'margin': '0.3rem'}, children='Immune of age groups/vaccine brands '
+                                                                      'were analyzed vs. deaths/confirmed cases'),
                          html.Li(style={'margin': '0.3rem'}, children='Pearson R and Granger Causality in '
                                                                       'Time Series were calculated')
                      ])
