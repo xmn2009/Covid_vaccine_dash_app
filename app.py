@@ -25,7 +25,8 @@ colors = {
 }
 stat_box_style = {'boxShadow': '#e3e3e3 4px 4px 2px',
                   'backgroundColor': colors['blue_back'],
-                  'width': '200px', 'fontWeight': 'bold'}
+                  'width': '100%', 'fontWeight': 'bold',
+                  'padding': '1rem'}
 
 # layout
 app.layout = html.Div(children=[
@@ -68,7 +69,7 @@ app.layout = html.Div(children=[
         className='twelve columns',
         children=[
             html.Div(
-                style={'margin': '2rem', 'display': 'flex', 'flex-wrap': 'wrap',
+                style={'margin': '2rem', 'display': 'flex', 'white-space': 'nowrap',
                        'justify-content': 'space-between', 'width': '100%',
                        'height': 'auto', },
                 children=[
