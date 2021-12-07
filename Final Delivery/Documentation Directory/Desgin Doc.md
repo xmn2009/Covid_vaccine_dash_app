@@ -15,14 +15,14 @@ We will create a web application, so the user could explore the analysis result 
 3. The Pearson R-value and Granger Causality in the time series of the selected county are listed and display our analysis result.
 4. Besides, we studied Immune of age groups/vaccine brands vs. deaths/confirmed cases. The user could explore the finger in different categories. 
 
-## 2 Dataset
+## 2. Dataset
 
 - “owid-covid-data (1).csv” and “covid-variants.csv”, were collected from [“Our World in Data”](https://ourworldindata.org/)
 - “Rates_of_COVID-19_Cases_or_Deaths_by_Age_Group_and_Vaccination_Status.csv” was collected from [CDC](https://data.cdc.gov/Public-Health-Surveillance/Rates-of-COVID-19-Cases-or-Deaths-by-Age-Group-and/3rge-nu2a).
 - “Austria.csv”, “Bulgaria.csv”, “France.csv”, “Germany.csv”, “Italy.csv”, “Netherlands.csv”, “Portugal.csv”, “Spain.csv”, “United States.csv” are datasets for Pearson R and Granger causality in time series and were generated using [stat.ipynb](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/stat.ipynb) file.
 
 
-## 3 Design Consideration
+## 3. Design Consideration
 
 ### 3.1 Assumptions
 - This  web application is designed to run on web browser.
@@ -45,7 +45,7 @@ We will create a web application, so the user could explore the analysis result 
 #### 3.4 Software
 - Web browser
 
-## 4 Design Diagram
+## 4. Design Diagram
 
 ### 4.1 Architectural Design
 
@@ -60,7 +60,7 @@ We will create a web application, so the user could explore the analysis result 
 
 ![use_case](../images/mockups.png)
 
-## 5 Deployment
+## 5. Deployment
 
 The web application is design to be deployed on Heroku.com. See detail at [special instructions.md](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
 

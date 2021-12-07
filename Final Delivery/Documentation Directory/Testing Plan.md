@@ -25,9 +25,10 @@ $ pip install -r requirements.txt
 ```
 $ .\venv\Scripts\python.exe .\app.py
 ```
-Once the app is up running, open the web page at browser at: 
-- http://127.0.0.1:8050/
-- Ctrl + shift + c to stop
+5. Once the app is up running, open the web page at browser at: 
+> http://127.0.0.1:8050/
+
+6. Ctrl + shift + c to stop
 
 
 ## 2. Debug with Heroku

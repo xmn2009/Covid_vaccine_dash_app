@@ -1,4 +1,4 @@
-# User Manual
+# Application  Manual
 
 ## 1. Introduction
 
