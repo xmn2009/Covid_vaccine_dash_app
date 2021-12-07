@@ -11,8 +11,9 @@ It might take some time for the web page to load.
 - Install the Heroku Command Line Interface (CLI) [[link]](https://devcenter.heroku.com/articles/getting-started-with-python?singlepage=true)
 - login with credential:
 
-> $ heroku login  
-
+'''
+  $ heroku login  
+'''
 ### 2.2 Create a new folder for the project:
 
 > $ mkdir groupL_dash_app
