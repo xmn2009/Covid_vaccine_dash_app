@@ -35,14 +35,14 @@ For Web Applicatin v 15: lastest update
 
 ## 2 Architectural Design
 ### 2.1 Component Diagram
-![Cryptogram UML](./images/architecture.png)
+![Cryptogram UML](../images/architecture.png)
 
 Diagram above shows the architectural of the web application.
 
 
 ### 2.2 Deployment Diagram
 
-The web application is design to be deployed on Heroku.com. See detail with special instructions  [deployment](../Special Instructions.md)
+The web application is design to be deployed on Heroku.com. See detail with [special instructions.md](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
 
 ## 3 Low-Level Design
 
