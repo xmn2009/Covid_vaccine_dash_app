@@ -12,7 +12,7 @@ It might take some time for the web page to load.
 - login with credential:
 
 '''
-  $ heroku login  
+>  $ heroku login  
 '''
 ### 2.2 Create a new folder for the project:
 
