@@ -20,58 +20,41 @@ For Web Applicatin v 15: lastest update
 - SDK: Android SDK
 - Programing Language: Python 3.9
 - Language: English
-- Input: Multi-touch
-- Output: See section 1.3
-- Device: See section 1.3 
-- User Interface: Android pre-built UI components
-- operating system: See section 1.3 
 
 ### 1.3 System Environment
 #### Hardware
 - There is no specific requirement on hardware
 
-#### Software
+#### 1.4 Software
 - Web browser
 
-## 2 Architectural Design
-### 2.1 Component Diagram
-![Cryptogram UML](../images/architecture.png)
+## 2 Design Diagram
+
+### 2.1 Architectural Design
+
+![architecture](../images/architecture.png)
 
 Diagram above shows the architectural of the web application.
 
+### 2.2 Use Cases:
 
-### 2.2 Deployment Diagram
-
-The web application is design to be deployed on Heroku.com. See detail with [special instructions.md](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
-
-## 3 Low-Level Design
-
-In the component diagram in section 2.1 the **Android Device** and **Datastore** represent business concepts of the application. The **Datastore** is used for data storage and retrieval, while the **Android Device** is used to obtain user input and output data to the user. As such these two components are stereotyped as <<Entity>> to represent their purpose in the diagram.
-
-3.0.1. **Administrator portal** component is used to manage the application, it provides the functionality of getting a collection of cryptogram statistics and disabling cryptograms which eventually deduct points from the creator of the cryptogram. It also accesses the datastore where cryptogram data is stored using a port.
-
-![Administrator portal](./images/3.0.1-v3.png)
-
-3.0.2. **Player Activities** This component handles the creation of a new player and login of a player. It has two ports which depend on the **Cryptogram manager component** to create a cryptogram and to solve a cryptogram.
-
-![Player Activities](./images/3.0.2-v3.png)
-
-3.0.3. **Cryptogram UI** component takes user input from the touch screen of the Android device, and sends output to the Android device for the end user to see. It is made up of the various activities of the android application. Because this component is part of GUI its implementation is not reflected in the design
-
-3.0.4 **Cryptogram manager** component provides an interface for players to solve and create cryptograms, and also an interface for the administrator to disable a cryptogram. It stores and retrieves cryptogram data in the datastore. It provides the information about the cryptogram to the UI for display to the user.
-
-![Cryptogram manager](./images/3.0.4-v3.png)
+![use_case](../images/useCase.png)
 
 
-### 3.1 Class Diagram
-![Cryptogram UML](./images/class_diagram-v3.png)
+### 2.3 Page mockup
 
-## 4 User Interface Design
-#### Application Login:
-![Login Page](./images/AppLoginPage_v3.png)
+![use_case](../images/mockups.png)
 
-#### UI for Players:
-![Player's Interfaces](./images/Interfaces_player_v3.png)
+## 3 Deployment
 
-#### UI for Administrators:
-![Adm's Interfaces](./images/Interfaces_Adm_v3.png)
+The web application is design to be deployed on Heroku.com. See detail at [special instructions.md](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
+
+## 3 Dataset
+
+- “owid-covid-data (1).csv” and “covid-variants.csv”, were collected from “Our World in Data” (https://ourworldindata.org/)
+- “Rates_of_COVID-19_Cases_or_Deaths_by_Age_Group_and_Vaccination_Status.csv” was collected from CDD, (https://data.cdc.gov/Public-Health-Surveillance/Rates-of-COVID-19-Cases-or-Deaths-by-Age-Group-and/3rge-nu2a)
+- “Austria.csv”, “Bulgaria.csv”, “France.csv”, “Germany.csv”, “Italy.csv”, “Netherlands.csv”, “Portugal.csv”, “Spain.csv”, “United States.csv” are datasets for Pearson R and Granger causality in time series and were generated using stat.ipynb file.
+
+
+
+
