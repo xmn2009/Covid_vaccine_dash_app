@@ -11,31 +11,29 @@ It might take some time for the web page to load.
 - Install the Heroku Command Line Interface (CLI) [[link]](https://devcenter.heroku.com/articles/getting-started-with-python?singlepage=true)
 - login with credential:
 
-> $ heroku login  
+```
+$ heroku login  
+```
 
 ### 2.2 Create a new folder for the project:
 
-> $ mkdir groupL_dash_app
-
-> $ cd groupL_dash_app
+```
+$ mkdir groupL_dash_app
+$ cd groupL_dash_app
+```
 
 ### 2.3 Initialize the folder with git and a virtualenv
 
->$ git init
-
->$ py -m venv venv
-
->$ cd venv/Scripts/activate.bat
-
->$ pip install dash
-
->$ pip install plotly
-
->$ pip install pandas
-
->$ pip install DateTime
-
->$ pip install gunicorn
+```
+$ git init
+$ py -m venv venv
+$ cd venv/Scripts/activate.bat
+$ pip install dash
+$ pip install plotly
+$ pip install pandas
+$ pip install DateTime
+$ pip install gunicorn
+```
 
 ### 2.4 Initialize the folder with app.py, a .gitignore file, requirements.txt, and a Procfile for deployment:
 
@@ -45,37 +43,44 @@ It might take some time for the web page to load.
 - Make sure app.py file contains “server = app.server” under “app = dash.Dash(__name_, external_stylesheets=es)”
 
 #### 2.4.2 .gitignore file
->
-> venv
-> *.pyc
-> .DS_Store
-> .env
-> .idea
-> stat.ipynb
+
+```
+venv
+*.pyc
+.DS_Store
+.env
+.idea
+stat.ipynb
+```
 
 #### 2.4.3 Procfile file
->
->web: gunicorn app:server
+
+```
+web: gunicorn app:server
+```
 
 #### 2.4.4 requirements.txt
->
->$ pip freeze > requirements.txt
 
+```
+$ pip freeze > requirements.txt
+```
 ### 2.5 Use git to add, (if file update, needs to push again)
->
-> $ git add . # add all files to git
->
->$ git commit -m 'Inital push'
->
->$ git push heroku master # deploy code to heroku
+```
+$ git add . 
+$ git commit -m 'Inital push'
+$ git push heroku master 
+```
 
 ### 2.6 Once successfully compiled, use below to run the app:
->
->$ heroku ps:scale web=1  # run the app with a 1 heroku "dyno"
->$ heroku open
 
+```
+$ heroku ps:scale web=1  # run the app with a 1 heroku "dyno"
+$ heroku open
+```
 ### 2.7 Debug heraku
->
->$ heroku logs --tail
->
-> If cvs file reading fails, another solution is [[link]](https://stackoverflow.com/questions/57204186/dash-app-deployed-on-heroku-cannot-read-csv-file)
+
+```
+$ heroku logs --tail
+```
+
+If cvs file reading fails, another solution is [[link]](https://stackoverflow.com/questions/57204186/dash-app-deployed-on-heroku-cannot-read-csv-file)
