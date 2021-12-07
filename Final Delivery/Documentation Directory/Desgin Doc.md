@@ -2,7 +2,7 @@
 
 ### Version Description
 
-For Web Applicatin v 15: lastest update
+Web Applicatin v15: lastest update
 
 **Author**: \<cs6440 Fall 2021 Group L - Zuodong Jiang, Xinying Jia, Mengan Xia>
 
@@ -50,8 +50,6 @@ We will create a web application, so the user could explore the analysis result 
 ### 4.1 Architectural Design
 
 ![architecture](../images/architecture.png)
-
-Diagram above shows the architectural of the web application.
 
 ### 4.2 Use Cases:
 
