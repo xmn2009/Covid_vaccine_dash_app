@@ -1,0 +1,1 @@
+![GanttChart](./images/final_gantt_chart.JPG)
