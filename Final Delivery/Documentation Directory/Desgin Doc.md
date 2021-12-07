@@ -42,7 +42,7 @@ Diagram above shows the architectural of the web application.
 
 ### 2.2 Deployment Diagram
 
-The web application is design to be deployed on Heroku.com. See detail with special instructions [deployment](../Special Instructions.md)
+The web application is design to be deployed on Heroku.com. See detail with special instructions  [deployment](../Special Instructions.md)
 
 ## 3 Low-Level Design
 
