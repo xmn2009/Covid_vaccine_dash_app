@@ -6,7 +6,7 @@ Using data visualization and modeling tools to analyze the public COVID-19 relat
 
 Fall 2021, CS6440, Group L: 
 
-- Zuodong Jiang: jzd@gatech.edu,
+- Zuodong Jiang: jzd@gatech.edu
 - Xinying Jia: xjia61@gatech.edu
 - Mengna Xia: mxia38@gatech.edu
 
