@@ -6,7 +6,7 @@ Web Applicatin v15: lastest update
 
 **Author**: \<cs6440 Fall 2021 Group L - Zuodong Jiang, Xinying Jia, Mengan Xia>
 
-## 1.Brief Introduction
+## 1. Brief Introduction
 
 We will create a web application, so the user could explore the analysis result of Covid-19 vaccine effectiveness. 
 

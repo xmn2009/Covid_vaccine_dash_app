@@ -63,22 +63,33 @@ $ pip install -r requirements.txt
 $ .\venv\Scripts\python.exe .\app.py
 ```
 6. Once the app is up running, open the web page at browser at: 
-> http://127.0.0.1:8050/
+```
+http://127.0.0.1:8050/
+```
+7. To stop, press
+``` 
+Ctrl + shift + c to stop
+```
 
-6. Ctrl + shift + c to stop
+# 6.Directories
+1 [Final Delivery](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery)
 
-# 6. Documentations
-1.[Final Gantt Chart](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Final%20Gantt%20Chart.md)
+2 [Research Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
 
-2.[User Manual](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Application%20Manual.md)
+3 [Documentation Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Documentation%20Directory)
 
-3.[Special Instructions of deployment](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
+# 7. Documentations
+1 [Final Gantt Chart](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Final%20Gantt%20Chart.md)
 
-4.[Research Directory of all historical files](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
+2 [User Manual](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Application%20Manual.md)
 
-5.[Desgin Documentation](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Desgin%20Doc.md)
+3 [Special Instructions of deployment](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
+
+4 [Research Directory of all historical files](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
+
+5 [Desgin Documentation](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Desgin%20Doc.md)
 	5.1 [Mockups](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/mockups.png) 
 	5.2 [Use Case Diagram](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
-	5.3 [Web application architecure](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
+	5.3 [Web Application Architecure](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
 
-6.[Testing Plan locally and remotely](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Testing%20Plan.md)
+6 [Testing Plan locally and remotely](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Testing%20Plan.md)
