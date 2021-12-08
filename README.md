@@ -32,6 +32,29 @@ Fall 2021, CS6440, Group L:
 - “Rates_of_COVID-19_Cases_or_Deaths_by_Age_Group_and_Vaccination_Status.csv” was collected from [CDC](https://data.cdc.gov/Public-Health-Surveillance/Rates-of-COVID-19-Cases-or-Deaths-by-Age-Group-and/3rge-nu2a).
 - “Austria.csv”, “Bulgaria.csv”, “France.csv”, “Germany.csv”, “Italy.csv”, “Netherlands.csv”, “Portugal.csv”, “Spain.csv”, “United States.csv” are datasets for Pearson R and Granger causality in time series and were generated using [stat.ipynb](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/stat.ipynb) file.
 
+## 4.4 Directories
+1 [Final Delivery](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery)
+
+2 [Research Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
+
+3 [Documentation Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Documentation%20Directory)
+
+## 4.5 Documentations
+1 [Final Gantt Chart](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Final%20Gantt%20Chart.md)
+
+2 [User Manual](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Application%20Manual.md)
+
+3 [Special Instructions of deployment](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
+
+4 [Research Directory of all historical files](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
+
+5 [Desgin Documentation](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Desgin%20Doc.md)
+	5.1 [Mockups](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/mockups.png) 
+	5.2 [Use Case Diagram](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
+	5.3 [Web Application Architecure](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
+
+6 [Testing Plan locally and remotely](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Testing%20Plan.md)
+
 # 5. Installation and run locally
 
 Below is the instruction for the windows system. 
@@ -70,26 +93,3 @@ http://127.0.0.1:8050/
 ``` 
 Ctrl + shift + c to stop
 ```
-
-# 6.Directories
-1 [Final Delivery](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery)
-
-2 [Research Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
-
-3 [Documentation Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Documentation%20Directory)
-
-# 7. Documentations
-1 [Final Gantt Chart](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Final%20Gantt%20Chart.md)
-
-2 [User Manual](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Application%20Manual.md)
-
-3 [Special Instructions of deployment](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
-
-4 [Research Directory of all historical files](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
-
-5 [Desgin Documentation](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Desgin%20Doc.md)
-	5.1 [Mockups](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/mockups.png) 
-	5.2 [Use Case Diagram](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
-	5.3 [Web Application Architecure](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
-
-6 [Testing Plan locally and remotely](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Testing%20Plan.md)
