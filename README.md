@@ -70,7 +70,7 @@ $ gh repo clone github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021
 $ py -m venv venv
 ```
 
-3. activate the virual environment
+3. Activate the virual environment
 ```
 $ .\venv\Scripts\activate.bat
 ```
@@ -91,5 +91,5 @@ http://127.0.0.1:8050/
 ```
 7. To stop, press
 ``` 
-Ctrl + shift + c to stop
+Ctrl + shift + c
 ```
