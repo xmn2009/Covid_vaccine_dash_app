@@ -10,9 +10,9 @@ Fall 2021, CS6440, Group L:
 - Xinying Jia: xjia61@gatech.edu
 - Mengna Xia: mxia38@gatech.edu
 
-# 3. Web application URL
+# 3. Web Application URL
 
-[Covid-19 (Coronavirus) Vaccine Effectiveness Analysis](https://groupl-dash-app.herokuapp.com/)
+## [**Covid-19 (Coronavirus) Vaccine Effectiveness Analysis**](https://groupl-dash-app.herokuapp.com/)
 
 # 4. Source Code
 
