@@ -12,7 +12,7 @@ Fall 2021, CS6440, Group L:
 
 # 3. Web Application URL
 
-## [**Covid-19 (Coronavirus) Vaccine Effectiveness Analysis**](https://groupl-dash-app.herokuapp.com/)
+[**Covid-19 (Coronavirus) Vaccine Effectiveness Analysis**](https://groupl-dash-app.herokuapp.com/)
 
 # 4. Source Code
 
