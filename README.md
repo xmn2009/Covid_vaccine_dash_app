@@ -36,28 +36,33 @@ Fall 2021, CS6440, Group L:
 
 Below is the instruction for the windows system. 
 
-1. Clone the repo:
+1. Clone the repo
 ```
 $ gh repo clone github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021
 ```
 
-2. Go into the directory, and create a virtual environment:
+2. Go into the directory, and create a virtual environment
 
 ```
 $ py -m venv venv
 ```
 
-3. Install the packages:
+3. activate the virual environment
+```
+$ .\venv\Scripts\activate.bat
+```
+
+4. Install the packages
 ```
 $ pip install -r requirements.txt
 ```
 
-4. Run the app:
+5. Run the app
 
 ```
 $ .\venv\Scripts\python.exe .\app.py
 ```
-5. Once the app is up running, open the web page at browser at: 
+6. Once the app is up running, open the web page at browser at: 
 > http://127.0.0.1:8050/
 
 6. Ctrl + shift + c to stop
