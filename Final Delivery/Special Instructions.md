@@ -27,12 +27,22 @@ $ cd groupL_dash_app
 ```
 $ git init
 $ py -m venv venv
-$ cd venv/Scripts/activate.bat
+$ .venv/Scripts/activate.bat
+```
+
+install packages either by:
+```
 $ pip install dash
 $ pip install plotly
 $ pip install pandas
 $ pip install DateTime
 $ pip install gunicorn
+```
+
+or
+
+```
+$ pip install -r requirements.txt
 ```
 
 ### 2.4 Initialize the folder with app.py, a .gitignore file, requirements.txt, and a Procfile for deployment:
