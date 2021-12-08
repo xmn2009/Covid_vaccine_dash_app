@@ -70,7 +70,7 @@ $ gh repo clone github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021
 $ py -m venv venv
 ```
 
-3. Activate the virual environment
+3. Activate the virtual environment
 ```
 $ .\venv\Scripts\activate.bat
 ```
