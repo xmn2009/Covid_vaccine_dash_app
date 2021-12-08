@@ -1,4 +1,6 @@
 # Special Instructions
+
+The lastest version on Heroku: v18
  
 ## 1. Web application URL
 https://groupl-dash-app.herokuapp.com/

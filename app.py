@@ -307,7 +307,7 @@ app.layout = html.Div(children=[
                        'backgroundColor': 'white',
                        'height': 'auto'},
                 children=[
-                    html.Label('Fully Vaccinations vs. Un-vaccinations',
+                    html.Label('United States Fully Vaccinations vs. Un-vaccinations',
                                style={'marginTop': '3rem',
                                       'fontWeight': 'bold',
                                       'textAlign': 'center'}),

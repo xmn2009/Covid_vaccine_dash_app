@@ -2,7 +2,7 @@
 
 ### Version Description
 
-Web Applicatin v15: lastest update
+Web Applicatin v18: lastest update
 
 **Author**: \<cs6440 Fall 2021 Group L - Zuodong Jiang, Xinying Jia, Mengan Xia>
 
