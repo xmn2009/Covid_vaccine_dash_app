@@ -14,6 +14,8 @@ Fall 2021, CS6440, Group L:
 
 [**Covid-19 (Coronavirus) Vaccine Effectiveness Analysis**](https://groupl-dash-app.herokuapp.com/)
 
+Initial load might take some time, as Heroku free account is used. 
+
 # 4. Source Code
 
 ## 4.1 Git repo
