@@ -33,7 +33,7 @@ Fall 2021, CS6440, Group L:
 - “Austria.csv”, “Bulgaria.csv”, “France.csv”, “Germany.csv”, “Italy.csv”, “Netherlands.csv”, “Portugal.csv”, “Spain.csv”, “United States.csv” are datasets for Pearson R and Granger causality in time series and were generated using [stat.ipynb](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/stat.ipynb) file.
 
 ## 4.4 Directories
-1 [Final Delivery](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery)
+1 [Final Delivery Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery)
 
 2 [Research Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
 
