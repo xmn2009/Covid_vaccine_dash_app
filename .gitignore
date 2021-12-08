@@ -2,5 +2,5 @@ venv
 *.pyc
 .DS_Store
 .env
-desktop.ini
+*.ini
 .idea

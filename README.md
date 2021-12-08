@@ -21,9 +21,9 @@ Fall 2021, CS6440, Group L:
 
 ## 4.2 File list
 
-- app.py is the source code for the web application
-- stat.ipynb used to calculate Pearson r and granger causality
-- requirements.txt for packages needed in the app.py
+- [app.py](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/app.py) is the source code for the web application
+- [stat.ipynb](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/stat.ipynb) used to calculate Pearson r and granger causality
+- [requirements.txt](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/requirements.txt) for packages needed in the app.py
 - All the .csv files are needed to run the app.py
 
 ## 4.3 Dataset
