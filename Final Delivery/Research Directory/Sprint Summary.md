@@ -496,6 +496,10 @@ Figure 2—	Necessary code snippet for deployment
 ## 4.	REFERENCES
 - Heroku- www.heroku.com
 
+## 5.	APPENDIX
+[Special Instructions of deployment](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
+
+
 
 
 
