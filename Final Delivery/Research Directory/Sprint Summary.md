@@ -94,8 +94,10 @@ Deploy the web application on heroku.com
 ## PROJECT DESIGN 
 Project Summary
 The US public started to receive COVID19 vaccines around March 2021 and about 51.1% of the total population have received full doses of vaccinations now (COVID-19, 2021). However, there is still a huge population that is deeply skeptical about the safety and effectiveness of the mRNA vaccine and causing them reluctant to receive the inoculation (Robson, 2021)
-In this study, we will use data visualization and modeling tools to analyze the public COVID-19 related health care data. Our goal is to provide real-world evidence for several major controversial topics about COVID-19 coronavirus:  
-First, vaccine effectiveness will be quantified synchrony correlation between time series data by trying different statistical methods. We propose higher vaccination effectiveness can be proven by a lower correlation between vaccination and infection data. Then we will evaluate COVID-19 vaccine effectiveness based on COVID-19 related health care data.  Finally, we will display our data on the interactive webpage, so the reader could have a better visualization of our conclusion. 
+
+In this study, we will use data visualization and modeling tools to analyze the public COVID-19 related health care data. Our goal is to provide real-world evidence for several major controversial topics about COVID-19 coronavirus: 
+ 
+First, vaccine effectiveness will be quantified synchrony correlation between time series data by trying different statistical methods. We propose higher vaccination effectiveness can be proven by a lower correlation between vaccination and infection data. Then we will evaluate COVID-19 vaccine effectiveness based on COVID-19 related health care data. Finally, we will display our data on the interactive webpage, so the reader could have a better visualization of our conclusion. 
 
 ## Tools and Technology
 -	Jupyter Notebook will be used as an IDE.
@@ -192,33 +194,41 @@ As we planned, we collect most of our COVID19 data from “Our World in Data” 
 
 ### 1.3	Exploratory Data Analysis for Time Series Data:
 We start some initial data exploration, only US data selected to display below:
-1.	Calculate the Pearson Score (Pearson correlation coefficient) between in-fection data and vaccination data (US data).  When Pearson’s r is close to zero, the less likely the two data sets are correlated. 
+
+Calculate the Pearson Score (Pearson correlation coefficient) between in-fection data and vaccination data (US data).  When Pearson’s r is close to zero, the less likely the two data sets are correlated. 
 
 ![Pearson](../images/pearson.png)
+
 Figure 1—	Pearson’s r values
 
 2.	Plot vaccination data with infection data for visualization. 
 
 ![Pearson](../images/s3f2.png)
+
 Figure 2—	US total cases vs total vaccinations
 
 ![Pearson](../images/s3f3.png)
+
 Figure 3—	US total deaths vs total vaccinations
 
 ![Pearson](../images/s3f4.png)
+
 Figure 4—	US new cases vs new vaccinations
 
 ## 2	CHALLENGES ENCOUNTERED
 	The biggest challenge is the data trend is not as we expected. From the US data, we could see that as the total vaccination increased, the total cases de-creased between Jan 2021 - Aug 2021, so as the same trend in the “total death vs total vaccinations”. However, the total cases and total death increase rapid-ly after Aug 2021. We notice the same trend appeared within other counties.  We assume this might be caused either by the spreading of delta-variant, or the starting of school. 
+
 	As we mentioned above, there might be more factors to affect the trend and how to separate and refine the condition and data point would be another challenge. 
+
 	Pearson’s r score is used to display the linear correlation between two sets of data (wiki). We found that only Pearson’s r score to explain the correlation might be too native. We need to figure out some other ways to get a better correlation. 
 
 ## 3	PLANS MOVING FORWARD
 As we mentioned the challenges in section 2, our plan to move forward is as be-low: 
-	Analyze more countries. The countries we picked right now only focus on bigger counties with better economic conditions. We will try to explore some less developed countries to see we could have more findings.
-	More correlation between different data and select the best infection data for correlation analysis. For example, we could compare the new cases to the to-tal vaccinations. Besides, all the data points are collected daily, we could transform the data into weekly to get a smoother plot. 
-	Refine the factors for further analysis.
-	Start to explore plotly.
+
+- Analyze more countries. The countries we picked right now only focus on bigger counties with better economic conditions. We will try to explore some less developed countries to see we could have more findings.
+- More correlation between different data and select the best infection data for correlation analysis. For example, we could compare the new cases to the to-tal vaccinations. Besides, all the data points are collected daily, we could transform the data into weekly to get a smoother plot. 
+- Refine the factors for further analysis.
+- Start to explore plotly.
 
 ## 4	REFERENCES
 Coronavirus Pandemic (COVID-19). (n.d.). Retrieved from ourworldindata.org: https://ourworldindata.org/coronavirus
@@ -232,48 +242,177 @@ When exploring the data from the last sprint initially, we found the data trend 
 After discussion, we think new cases vs total vaccinations would be a good rep-resentation to achieve our goal. We notice the trend is what we expected before July. However, the new cases went up after July, and we guess it might be caused by the delta variant. 
 
 ![s4f1.png](../images/s4f1.png)
+
 Figure 1—	US new cases vs. total vaccinations
 ### 1.2	COVID variants new cases over time in different countries
 To prove our hypothesis, we collected COVID variants data from ourworldinda-ta.org. The data sets include location, data, variant, total number and percent of each variant, and the total number of samples sequence biweekly. Only delta was selected for analysis, and we notice there are some correlations between the delta variant and the new cases, see figure 3 in the appendix for more details.
 ### 1.3	Data analysis in new cases and delta variant cases over the vaccinations
 To plot the two different datasets together, data transformation was done by: 1. limited time range from 01/01/2021 to 10/16/2021. 2. resampled on a biweekly ba-sis. We could see that the delta is the trigger of the uproar of new cases from mid-June in figure 3.
+
+![s4f2.png](../images/s4f2.png)
+
 Figure 2—	Total vaccinations vs. new cases vs. delta
-1.4	Calculate the correlations
+
+### 1.4	Calculate the correlations
 A series of cross-correlations between different covid data at different time rang-es were calculated listed in table 1 in the appendix, and we believe this is a good representation of our hypothesis. 
 The results indicate that vaccination has an overall negative effect on new cases (correlation = -0.2687 after January and correlation= -0.76 before June). Delta vari-ant accounted for the most of new cases (correlation = 0.9034 after January and correlation = 0.9 after June). However, the correlation analysis does not give a clear indication that vaccination harms delta variant (correlation =0.59 after June). This will be what our further analysis will focus on. 
-2	CHALLENGES ENCOUNTERED
-	The biggest challenge is the data quality issue. Ascertain the type of data in some countries is not available. US data is the best by far the most complete. However, for a lot of other countries, the data is either missing a huge part, or the plot shows an unexplainable trend. 
-	Now we have made big progress.  However, after July 2021, the delta variant broke out. Is the COVID vaccine effective for the delta variant, which is the most important variant in the world? It is still unclear.  We need to analyze deeply to answer this question.  
-	As we mentioned above, our analysis can be conducted using other factors. For example, we can pick several representative countries and compare the COVID data of these countries. However, the data from different countries may not be in the same format, which will be another challenge.
-	Until now our data show the daily new case of COVID is related to the total number of full vaccinations. However, do full vaccinations cause the decrease of daily new cases of COVID? Does the COVID vaccine make the spread un-der control? These questions remain challengeable.  
-3	PLANS MOVING FORWARD
+
+## 2	CHALLENGES ENCOUNTERED
+- The biggest challenge is the data quality issue. Ascertain the type of data in some countries is not available. US data is the best by far the most complete. However, for a lot of other countries, the data is either missing a huge part, or the plot shows an unexplainable trend. 
+- Now we have made big progress.  However, after July 2021, the delta variant broke out. Is the COVID vaccine effective for the delta variant, which is the most important variant in the world? It is still unclear.  We need to analyze deeply to answer this question.  
+- As we mentioned above, our analysis can be conducted using other factors. For example, we can pick several representative countries and compare the COVID data of these countries. However, the data from different countries may not be in the same format, which will be another challenge.
+- Until now our data show the daily new case of COVID is related to the total number of full vaccinations. However, do full vaccinations cause the decrease of daily new cases of COVID? Does the COVID vaccine make the spread un-der control? These questions remain challengeable.  
+## 3	PLANS MOVING FORWARD
 As we mentioned the challenges in section 2, our plan to move forward is as be-low: 
 1.	Perform a deep analysis of vaccination effectiveness. Now we only ana-lyze the relation between new daily cases vs. the total number of vaccina-tions. Some reports showed that vaccination may make the illness less se-vere. To test whether or not, we will try to include other factors, like ICU and death number to check the effectiveness of the COVID vaccine. 
 2.	Compare the covid data between different countries. The countries we picked right now only focus on the US. We will try to explore both devel-oped and developing countries. We expect to see a difference in the data plot as most developed countries have better vaccination than developing countries. 
 3.	Finalize the data analysis, and explore if we could add more plots to achieve our original goal
 4.	 Explore if we could do a causality study in time-series data
 5.	Start the initial implementation of Dash/Plotly
-4	REFERENCES
-Coronavirus Pandemic (COVID-19). (n.d.). Retrieved from ourworldindata.org: https://ourworldindata.org/coronavirus
-Pearson correlation coefficient. (n.d.). Retrieved from wikipedia.org: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
-5	APPENDIX
+## 4	REFERENCES
+- Coronavirus Pandemic (COVID-19). (n.d.). Retrieved from ourworldindata.org: https://ourworldindata.org/coronavirus
+- Pearson correlation coefficient. (n.d.). Retrieved from wikipedia.org: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+## 5	APPENDIX
+
+![s4f3.png](../images/s4f3.png)
 
 Figure 3—	Percent of delta vs. date
 
 Table 1 —	Cross-correlation
-Time Range	United State	Cross-Correlation
-01/01/2011 and 10/01/2021
-	total_vac vs. new cases:	-0.2687
-	total_vac vs. delta new cases	0.5962
-	new cases vs. delta new cases	0.9034
- 01/01/2011 and 06/01/2021
-	total_vac vs. new cases:	-0.76
-	total_vac vs. delta new cases	0.81
-	new cases vs. delta new cases	-0.49
-06/01/2011 and 10/01/2021
-	total_vac vs. new cases:	0.79
-	total_vac vs. delta new cases	0.59
-	new cases vs. delta new cases	0.90
+
+![s4t1.png](../images/s4t1.png)
+
+
+# Practicum Sprint #5
+
+## 1	ACCOMPLISHMENT
+### 1.1	Data analysis updates
+
+Our previous correlation result indicates that vaccination has an overall negative effect on new cases (correlation = -0.2687 after January and correlation= -0.76 before June) (figure 1); Delta variants are the main reason for the burst of Covid cases since June 2021(figure 1).  In this report, we are going to test how vaccination impacts death and hospitalization.  Then we are going to use statistical methods to test if there is a causal relationship between vaccination and covid infection. 
+
+![s5f1.png](../images/s5f1.png)
+
+Figure 1—	Total vaccinations vs. new cases vs number of deltas
+
+First, the following data was included in the analysis: the number of the new deaths caused by covid infection (new death), the number of patients in ICU (icu_patients), the number of patients in hospitalization (hosp_patients). We will still include delta data because we think the delta variant might still affect the result.
+
+For data visualization, we have used two methods to make these data in the same magnitudes: we tried to plot with “new_deaths” (absolute value), “total_vaccinations_per_hundred” (percent), and “perc_sequences” (percent)  the hospital and ICU patient per million(figure2); we also try to normalize the data by min_max normalization(figure3). 
+
+The normalization results clearly show that the number of hospitalizations and ICU have the same trends (figure3) as new cases (figure1). As a result,  it indicates that vaccinations also have a negative correlation to hospitalization and ICU cases. 
+
+![s5f2.png](../images/s5f2.png)
+
+Figure 2—	better visualization for total vaccination vs new death vs % of delta variant
+
+![s5f3.png](../images/s5f3.png)
+
+Figure 3—	Normalization of total vaccination vs new death vs  of delta variant vs. hospital and ICU patients per million
+
+Second, while we do see the negative correlation between Vaccination and covid infection, correlation does not imply causation. To support our hypothesis that vaccination is the cause of the reduced covid infection, we are using  Granger Causality in Time Series (Granger Causality in Time Series – Explained using Chicken and Egg problem)
+
+Granger test was performed by considering 4th lag as optimal lag for now. When p-value is low(<0.05), A does not granger cause B; whereas when p-value is high (>0.05), A does granger cause B. Table1 shows that total_vaccinations granger causes the new case(p_value=0.5407); whereas new cases do not granger cause total_vaccinations (p_value = 0.0475). In other words, vaccination came first and not the new cases. Following the same methods, vaccination granger causes hospitalization (p_value = 0.08 and 0.64 by two directions) and ICU (p_value = 0.0135 and 0.51 by two directions). However, whether vaccination causes new_death is unknown (p_value = 0.1199 and 0.29 by two directions), as there is no significant difference between p_value by the two directions (partial result in figure 7 in appendix). 
+
+Table 1 —	Table 1 Augmented Dickey-Fuller Test (ADF test)
+![s5t1.png](../images/s5t1.png)
+
+Our results are promising to show that there is a causal relationship between vaccination and covid infection and vaccinations usually come first and are the cause of covid infection (new_cases, hospitalization, and ICU). 
+
+Third, We also analyze other countries besides the US. We collected COVID19 related data from 233 countries in the whole world and found out that there are 43 countries (figure 8 in appendix) where the full vaccination percentage is over 60%.
+
+We analyze and visualize these COVID19 related data (partial result in figure 9 in appendix). The results showed that vaccinations have a negative correlation to new cases and death cases in most countries even if every country has different policies, vaccines, population and climates. 
+
+### 1.2	Connect with mentor
+No. We read the comments from the mentor of our last sprint, and the comment is positive. On the other side, we have already listed out our plan, and we are still working on the data analysis part of the projects, as in the previous two sprints. If we progress too slow or the results are questionable, we think TA will let us know. 
+
+## 2	CHALLENGES ENCOUNTERED
+1.	One challenge to plot figure 2 and figure 3 is the number magnitudes (figure 4 and 5 in appendix). Total vaccinations, new death, number of the delta, hospital patients, and ICU patients are all in different magnitudes, which makes them hard to plot together. To generate better visualization, we need to normalize the data with the following methods: 
+dfnorm = (dfmerge - dfmerge.min()) / (dfmerge.max()-dfmerge.min())
+2.	To do the Granger causality test, the data needs to be stationary. We use an ADF test with the stationary of the data (figure 6 in appendix). After try different transformations, we found for ['total_vaccinations', 'new_cases', 'new_deaths'], resample (Resample python list with pandas) at ‘10D’ and for ['total_vaccinations', 'hosp_patients', 'icu_patients'], resample at ‘18D’ works. We then further use the ffill() (pandas.DataFrame.ffill) function to fill the NA with the mean value. By now, the data is ready for the Granger causality test. 
+3.	We don't have any further needs for the data analysis part. We think there is promising data to support our initial proposal. And we will have several images and statistical results to display on the web application.
+## 3	PLANS MOVING FORWARD
+1.	We spent around 20 hours this week, and a little bit more on last week, about 25 hours.
+2.	As we planned in sprint 2, we will start to build a web application next week using the Dash/Plotly framework. We are planning to spend 15 -20 hours next week on the initial implementation.
+## 4	REFERENCES
+- Granger Causality in Time Series – Explained using Chicken and Egg problem. (n.d.). Retrieved from analyticsvidhya.com: https://www.analyticsvidhya.com/blog/2021/08/granger-causality-in-time-series-explained-using-chicken-and-egg-problem/
+- pandas.DataFrame.ffill. (n.d.). Retrieved from pandas.pydata.org: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.ffill.html
+- Resample python list with pandas. (n.d.). Retrieved from stackoverflow.com: https://stackoverflow.com/questions/43478822/resample-python-list-with-pandas
+
+# Practicum Sprint #6
+
+## 1	ACCOMPLISHMENT
+As we planned, this week we are starting to build our data visualization application with Dash/plotly. 
+-	we have built a basic layout (figure 1) that includes a title, a side navigation bar, a five-column area to display numbers, a figure area, and a statistic result area. The layout uses an external .css file (etpinard).
+
+![s6f1.png](../images/s6f1.png)
+
+Figure 1—	Dash layout and code
+
+1.2 We have tried “plotly.graph_objects” (Graph Objects in Python) to make an interactive graph and host these graph components from the built-in “dash_core_components” package (Dash Core Components). We are hoping to plot our own data using these tools next week. 
+
+![s6f2.png](../images/s6f2.png)
+
+Figure 2—	Code for the layout
+
+1.3 We analyze COVID19 data of the USA deeply. We compared new cases and death of fully vaccination population and the vaccination population and proved that vaccines reduce the risk of getting COVID-19 and protect people from severe illness.
+
+ ![s6f3.png](../images/s6f3.png)
+
+Figure 3—	Vaccination rate
+
+## 2	CHALLENGES ENCOUNTERED
+
+2.1 The dash layout needs some fine adjustment; some components still have alignment problems. We also tried “dash_bootstrap_components” (Dash Bootstrap Components), which also needs some learning for the implementation.
+
+2.2 We are still working on how to make an interactive graph with line plots by dropdown function and implement the data graph into the layout. Hopefully, we could finish this part next week.
+
+## 3	PLANS MOVING FORWARD
+
+3.1 We spend about 20 hours this week on the initial web application layout, simple plotly implementation. We spend about 20 hours last week, as it is the part to finalize our data analysis. 
+
+3.2 As we planned in sprint 2, we are moving into combining the web application with analyzed data. We expect about 20 -25 hours next week.
+
+## 4	REFERENCES
+- Dash Bootstrap Components. (n.d.). Retrieved from https://dash-bootstrap-components.opensource.faculty.ai/
+- Dash Core Compoents. (n.d.). Retrieved from https://dash.plotly.com/dash-core-components
+- etpinard. (n.d.). PLotly.js. Retrieved from codepen.io: https://codepen.io/chriddyp/pen/bWLwgP.css
+- Graph Objects in Python. (n.d.). Retrieved from plotly.com: https://plotly.com/python/graph-objects/
+
+
+# Practicum Sprint #7
+
+## 1	ACCOMPLISHMENT
+As we planned, this week we are starting to build our data visualization with analyzed data using the Dash web application created by plotly.
+ 
+The structure and content of our web app were firstly designed by following the CSS and HTML components from the template (“Part 3. Basic Callbacks | Dash for Python Documentation | Plotly”). Then, in order to create interactive line charts, we have implemented several dash functions including “Dropdown by countries”, “Checklist by categories”, “Slider by Months” (demo).  Our main analysis figure and statistical data can be updated with the “callback function”. 
+
+We are still working on an analysis to calculate vaccine effectiveness scores based on the Granger Causality and the correlation score. We plan to use a dashing ta-ble to display it by different date range. 
+
+Below is the link for a short application demo video:
+https://youtu.be/PZjyliNIZ5Y
+
+![s7.png](../images/s7.png)
+
+## 2	CHALLENGES ENCOUNTERED
+- There is a learning curve of the “@app.callbak” function of Dash/plotly.
+- Our data come from different original .csv files. In order to plot different val-ues together, we need to merge the file and do some index handling.
+- There are several filters to filter the data, we have to set up the right sequence to combine them together.
+- How to properly represent the vaccine effectiveness using our existing statis-tical analysis based on our current data is a big challenge. The study will be continued in our next sprint. 
+
+## 3	PLANS MOVING FORWARD
+
+- Implement the Granger Causality and the correlation score table
+- QA the application for any mistakes.
+- We spent about 25 hours this week on the interactive implementation. We spent about 20 hours last week. 
+- As we planned in sprint 2, we are moving into the table implementation and QA. We expect about 15 hours next week.
+
+## 4	WORK CITED
+- “Part 3. Basic Callbacks | Dash for Python Documentation | Plotly.” Dash Plotly, https://dash.plotly.com/basic-callbacks. Accessed 19 November 2021.
+- Demo link - https://youtu.be/PZjyliNIZ5Y
+
+
+
+
+
 
 
 
