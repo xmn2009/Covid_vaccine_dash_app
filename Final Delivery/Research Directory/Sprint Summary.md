@@ -405,12 +405,96 @@ https://youtu.be/PZjyliNIZ5Y
 - We spent about 25 hours this week on the interactive implementation. We spent about 20 hours last week. 
 - As we planned in sprint 2, we are moving into the table implementation and QA. We expect about 15 hours next week.
 
-## 4	WORK CITED
+## 4	REFERENCES
 - “Part 3. Basic Callbacks | Dash for Python Documentation | Plotly.” Dash Plotly, https://dash.plotly.com/basic-callbacks. Accessed 19 November 2021.
 - Demo link - https://youtu.be/PZjyliNIZ5Y
 
 
+# Practicum Sprint #8
 
+## 1	ACCOMPLISHMENT
+As we planned, we are focusing on the final implementation, and debugging of our web application. 
+
+We add two main parts other than the line chart implemented last week:
+
+- Pearson r correlation and the granger causality:
+ 
+ ![s8f1.png](../images/s8f1.png)
+ 
+Figure 1 - dash table
+
+- Fully vaccinations vs un-vaccinations
+ 
+ ![s8f2.png](../images/s8f2.png)
+ 
+Figure 2 - newly add dash plot
+
+- Youtube link of final implementation:
+
+https://youtu.be/FicLsrCadyc
+
+
+Several bugs were found:
+
+1.	The data for the statistic is in different scopes. For example, total vaccination is defined as “Total number of COVID-19 vaccination doses administered”, however, for ICU patients, hospital patients, and new cases are defined in a “given day”. As a result, the total vaccination value should use the mean value, while the other 3 should use the total value respectively. 
+
+2.	To make the web application appearance look better, we have to modify some of the margin settings of the div containers. 
+
+## 2	CHALLENGES ENCOUNTERED
+
+2.1	It takes time to modify the web application setting. And as we have more figures and tables to put in, we need to update our web application display. For example, the statistic boxes were removed from the fig container into a separate container (appendix figure 3)
+2.2	We need to manually generate data for correlation and Granger causality base on the country. 
+2.3	The plot of vaccinations vs un-vaccinations implemented differently from the normalized plot
+2.4	It is better to only have one callback function (appendix fig 5), otherwise the app might have a data loading problem.
+## 3	PLANS MOVING FORWARD
+
+3.1	We spent about 15 hours this week on implementation and debugging the web application. We spent about 15 hours last week, as it is the part to finalize our data analysis. 
+3.2	As we planned in sprint 2, we are moving into the deployment of the web application. We expect about 5 hours next week.
+3.3	We will start to prepare the final submission. 
+
+## 4	APPENDIX
+
+![s8f3.png](../images/s8f3.png)
+ 
+Figure 3 - Statistic boxes
+
+![s8f4.png](../images/s8f4.png)
+ 
+Figure 4 - Normalized figure
+ 
+![s8f5.png](../images/s8f5.png)
+  
+Figure 5 - Callback function in the app
+
+# Practicum Sprint #9
+ 
+## 1.	ACCOMPLISHMENT
+As we planned, this week we are focusing on the deployment of our interactive web application. 
+
+1.	Make some modifications to the appearance of the web application. We add-ed a conditional radio button for the bottom figures. 
+2.	We use Heroku for our deployment, Like Azure, Heroku is a cloud platform as a service supporting several programming languages.
+3.	we have successfully deployed our app, below is the link: 
+
+https://groupl-dash-app.herokuapp.com/
+
+![s9f1.png](../images/s9f1.png)
+
+Figure 1—	deployment on heroku.com
+
+## 2.	CHALLENGES ENCOUNTERED
+- Some code snippet needs to update to correct deployment. For example:
+
+![s9f2.png](../images/s9f2.png) 
+Figure 2—	Necessary code snippet for deployment
+
+- The data-input section needs to be put into the main function scope, other-wise, the data will not be loaded correctly on Heroku.
+-Only load the necessary libraries into the requirements.txt file, otherwise there might take a long time to upload, and the compatible problems as well.
+
+## 3.	PLANS MOVING FORWARD
+- We spent about 8 hours this week on deployment and its troubleshooting. We spent about 15 hours last week, as it is the part to finalize our web application implementation. 
+- As we planned in sprint 2, we are moving into the final submission. We plan about 20 hours for preparing the files and making the presentation. 
+## 4.	REFERENCES
+- Heroku- www.heroku.com
 
 
 
