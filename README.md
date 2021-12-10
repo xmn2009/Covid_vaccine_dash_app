@@ -48,7 +48,7 @@ Initial load might take some time, as Heroku free account is used.
 
 3 [Special Instructions of deployment](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
 
-4 [Research Directory of all historical files](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory)
+4 [Sprint Summary](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Research%20Directory/Sprint%20Summary.md)
 
 5 [Desgin Documentation](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Desgin%20Doc.md)
 	5.1 [Mockups](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/mockups.png) 

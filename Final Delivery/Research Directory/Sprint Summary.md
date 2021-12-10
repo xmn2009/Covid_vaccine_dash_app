@@ -473,9 +473,7 @@ As we planned, this week we are focusing on the deployment of our interactive we
 
 1.	Make some modifications to the appearance of the web application. We add-ed a conditional radio button for the bottom figures. 
 2.	We use Heroku for our deployment, Like Azure, Heroku is a cloud platform as a service supporting several programming languages.
-3.	we have successfully deployed our app, below is the link: 
-
-https://groupl-dash-app.herokuapp.com/
+3.	we have successfully deployed our app, below is the link: https://groupl-dash-app.herokuapp.com/
 
 ![s9f1.png](../images/s9f1.png)
 
@@ -485,6 +483,7 @@ Figure 1—	deployment on heroku.com
 - Some code snippet needs to update to correct deployment. For example:
 
 ![s9f2.png](../images/s9f2.png) 
+
 Figure 2—	Necessary code snippet for deployment
 
 - The data-input section needs to be put into the main function scope, other-wise, the data will not be loaded correctly on Heroku.
