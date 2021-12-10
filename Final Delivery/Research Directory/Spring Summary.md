@@ -153,36 +153,127 @@ Table 1 —	Project schedule
 
 | Week # | Week of | Task | Reading/Videos |
 | ------ | ------  | -----| ------  |
-5	09/20/2021	Choosing project topic and areas	
-6	09/27/2021		
-7	10/04/2021		
-8	10/11/2021	Web application starting design, including the detailed plan, schedule, diagram, mockup, implementation plan, etc.	https://www.coursera.org/specializations/software-design-architecture
-
-
-9	10/18/2021	Data collecting, cleaning, and transformation.	-	https://github.com/owid/covid-19-data/tree/master/public/data
--	https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_numpy.html
-
-10	10/25/2021	Data analysis to find a good metric to measure the correlation between covid-19 infection and vaccination data.	-	https://scikit-learn.org/stable/
--	https://www.youtube.com/watch?v=0B5eIE_1vpU
-
-11	11/01/2021	Finalize the data analysis, to see if we still could achieve our Original goal, do we need to add/remove some of our original goals. 	
-12	11/08/2021	Build a web application.	https://plotly.com/python/
-
-13	11/15/2021	Combine the web application with analyzed data.	
-14	11/22/2021	QA with test cases.	
-15	11/29/2021	Deploy the web application.	
-16	12/06/2021	Prepare presentation	
-17	12/13/2021	Finalize and submit all the files	
+| 5 | 09/20/2021 |	Choosing project topic and areas |	|
+| 6 | 09/27/2021 | | |		
+| 7 | 10/04/2021 | | |		
+| 8	| 10/11/2021 | Web application starting design, including the detailed plan, schedule, diagram, mockup, implementation plan, etc. |	https://www.coursera.org/specializations/software-design-architecture |
+| 9 | 10/18/2021 |Data collecting, cleaning, and transformation.|	1.	https://github.com/owid/covid-19-data/tree/master/public/data 2. 	https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_numpy.html |
+|10 | 10/25/2021 |Data analysis to find a good metric to measure the correlation between covid-19 infection and vaccination data.|1. https://scikit-learn.org/stable/ 2. https://www.youtube.com/watch?v=0B5eIE_1vpU | 
+|11| 11/01/2021| Finalize the data analysis, to see if we still could achieve our Original goal, do we need to add/remove some of our original goals. | |
+|12| 11/08/2021| Build a web application.| https://plotly.com/python/|
+|13| 11/15/2021| Combine the web application with analyzed data.| |
+|14| 11/22/2021| QA with test cases.| |
+|15| 11/29/2021| Deploy the web application.| |
+|16| 12/06/2021| Prepare presentation| |
+|17| 12/13/2021| Finalize and submit all the files| |
 			
-Needs/ Risks
+##### Needs/ Risks
 1.	There is a limited time (less than 10 weeks).
 2.	Communication between team members, and with the mentor.
 3.	Data source:
-o	Covid-19 data from specific countries with some time range could be missing. 
-o	The quality of data needs to be validated. Only high-quality data should be selected for the study. 
+	- Covid-19 data from specific countries with some time range could be missing. 
+	- The quality of data needs to be validated. Only high-quality data should be selected for the study. 
 4.	Data analysis
-o	It is critical to find a correct method to measure the reverse correlation between infection and vaccination. 
-o	Team members need to learn how to use different python libraries for data analysis, visualization.
+	- It is critical to find a correct method to measure the reverse correlation between infection and vaccination. 
+	- Team members need to learn how to use different python libraries for data analysis, visualization.
 5.	Developing and publishing the web application
-o	Team members need to learn how to create a Plotly visualization and embed it on websites. 
+	- Team members need to learn how to create a Plotly visualization and embed it on websites. 
+
+# Practicum Sprint #3
+
+## 1	ACCOMPLISHMENT
+### 1.1	Data Collection
+As we planned, we collect most of our COVID19 data from “Our World in Data” (Coronavirus Pandemic (COVID-19)). There are a total of 65 columns, including location, toatal_cases, new_cases, weekly_icu_admissions, etc…. There are a total of 60402 rows of data, and 233 unique locations (countries) as well. Data was saved in CSV format.
+### 1.2	Data cleaning and transformation
+1.	In a Juypter Notebook file, data was loaded with Pandas data frame;
+2.	We further created time-series data, which ranges from 01/01/2021 to 10/01/2021, since this is the major vaccination time range for the US, and most other countries start after the US.
+3.	The date columns are replaced with indexes for easy handling in the fu-ture. 
+4.	8 countries were picked for initial data analysis for initial comparison. These countries include the US, South Africa, Japan, UK, Germany, Aus-tralia, Canada, Italy.
+
+### 1.3	Exploratory Data Analysis for Time Series Data:
+We start some initial data exploration, only US data selected to display below:
+1.	Calculate the Pearson Score (Pearson correlation coefficient) between in-fection data and vaccination data (US data).  When Pearson’s r is close to zero, the less likely the two data sets are correlated. 
+
+![Pearson](../images/pearson.png)
+Figure 1—	Pearson’s r values
+
+2.	Plot vaccination data with infection data for visualization. 
+
+![Pearson](../images/s3f2.png)
+Figure 2—	US total cases vs total vaccinations
+
+![Pearson](../images/s3f3.png)
+Figure 3—	US total deaths vs total vaccinations
+
+![Pearson](../images/s3f4.png)
+Figure 4—	US new cases vs new vaccinations
+
+## 2	CHALLENGES ENCOUNTERED
+	The biggest challenge is the data trend is not as we expected. From the US data, we could see that as the total vaccination increased, the total cases de-creased between Jan 2021 - Aug 2021, so as the same trend in the “total death vs total vaccinations”. However, the total cases and total death increase rapid-ly after Aug 2021. We notice the same trend appeared within other counties.  We assume this might be caused either by the spreading of delta-variant, or the starting of school. 
+	As we mentioned above, there might be more factors to affect the trend and how to separate and refine the condition and data point would be another challenge. 
+	Pearson’s r score is used to display the linear correlation between two sets of data (wiki). We found that only Pearson’s r score to explain the correlation might be too native. We need to figure out some other ways to get a better correlation. 
+
+## 3	PLANS MOVING FORWARD
+As we mentioned the challenges in section 2, our plan to move forward is as be-low: 
+	Analyze more countries. The countries we picked right now only focus on bigger counties with better economic conditions. We will try to explore some less developed countries to see we could have more findings.
+	More correlation between different data and select the best infection data for correlation analysis. For example, we could compare the new cases to the to-tal vaccinations. Besides, all the data points are collected daily, we could transform the data into weekly to get a smoother plot. 
+	Refine the factors for further analysis.
+	Start to explore plotly.
+
+## 4	REFERENCES
+Coronavirus Pandemic (COVID-19). (n.d.). Retrieved from ourworldindata.org: https://ourworldindata.org/coronavirus
+Pearson correlation coefficient. (n.d.). Retrieved from wikipedia.org: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+
+# Practicum Sprint #4
+
+## 1	ACCOMPLISHMENT
+When exploring the data from the last sprint initially, we found the data trend is different from what we expected. We then further explored this in this sprint. Be-low we only select US data for the explanation.
+### 1.1	Data analysis on the new cases and total vaccinations in the US
+After discussion, we think new cases vs total vaccinations would be a good rep-resentation to achieve our goal. We notice the trend is what we expected before July. However, the new cases went up after July, and we guess it might be caused by the delta variant. 
+
+![s4f1.png](../images/s4f1.png)
+Figure 1—	US new cases vs. total vaccinations
+### 1.2	COVID variants new cases over time in different countries
+To prove our hypothesis, we collected COVID variants data from ourworldinda-ta.org. The data sets include location, data, variant, total number and percent of each variant, and the total number of samples sequence biweekly. Only delta was selected for analysis, and we notice there are some correlations between the delta variant and the new cases, see figure 3 in the appendix for more details.
+### 1.3	Data analysis in new cases and delta variant cases over the vaccinations
+To plot the two different datasets together, data transformation was done by: 1. limited time range from 01/01/2021 to 10/16/2021. 2. resampled on a biweekly ba-sis. We could see that the delta is the trigger of the uproar of new cases from mid-June in figure 3.
+Figure 2—	Total vaccinations vs. new cases vs. delta
+1.4	Calculate the correlations
+A series of cross-correlations between different covid data at different time rang-es were calculated listed in table 1 in the appendix, and we believe this is a good representation of our hypothesis. 
+The results indicate that vaccination has an overall negative effect on new cases (correlation = -0.2687 after January and correlation= -0.76 before June). Delta vari-ant accounted for the most of new cases (correlation = 0.9034 after January and correlation = 0.9 after June). However, the correlation analysis does not give a clear indication that vaccination harms delta variant (correlation =0.59 after June). This will be what our further analysis will focus on. 
+2	CHALLENGES ENCOUNTERED
+	The biggest challenge is the data quality issue. Ascertain the type of data in some countries is not available. US data is the best by far the most complete. However, for a lot of other countries, the data is either missing a huge part, or the plot shows an unexplainable trend. 
+	Now we have made big progress.  However, after July 2021, the delta variant broke out. Is the COVID vaccine effective for the delta variant, which is the most important variant in the world? It is still unclear.  We need to analyze deeply to answer this question.  
+	As we mentioned above, our analysis can be conducted using other factors. For example, we can pick several representative countries and compare the COVID data of these countries. However, the data from different countries may not be in the same format, which will be another challenge.
+	Until now our data show the daily new case of COVID is related to the total number of full vaccinations. However, do full vaccinations cause the decrease of daily new cases of COVID? Does the COVID vaccine make the spread un-der control? These questions remain challengeable.  
+3	PLANS MOVING FORWARD
+As we mentioned the challenges in section 2, our plan to move forward is as be-low: 
+1.	Perform a deep analysis of vaccination effectiveness. Now we only ana-lyze the relation between new daily cases vs. the total number of vaccina-tions. Some reports showed that vaccination may make the illness less se-vere. To test whether or not, we will try to include other factors, like ICU and death number to check the effectiveness of the COVID vaccine. 
+2.	Compare the covid data between different countries. The countries we picked right now only focus on the US. We will try to explore both devel-oped and developing countries. We expect to see a difference in the data plot as most developed countries have better vaccination than developing countries. 
+3.	Finalize the data analysis, and explore if we could add more plots to achieve our original goal
+4.	 Explore if we could do a causality study in time-series data
+5.	Start the initial implementation of Dash/Plotly
+4	REFERENCES
+Coronavirus Pandemic (COVID-19). (n.d.). Retrieved from ourworldindata.org: https://ourworldindata.org/coronavirus
+Pearson correlation coefficient. (n.d.). Retrieved from wikipedia.org: https://en.wikipedia.org/wiki/Pearson_correlation_coefficient
+5	APPENDIX
+
+Figure 3—	Percent of delta vs. date
+
+Table 1 —	Cross-correlation
+Time Range	United State	Cross-Correlation
+01/01/2011 and 10/01/2021
+	total_vac vs. new cases:	-0.2687
+	total_vac vs. delta new cases	0.5962
+	new cases vs. delta new cases	0.9034
+ 01/01/2011 and 06/01/2021
+	total_vac vs. new cases:	-0.76
+	total_vac vs. delta new cases	0.81
+	new cases vs. delta new cases	-0.49
+06/01/2011 and 10/01/2021
+	total_vac vs. new cases:	0.79
+	total_vac vs. delta new cases	0.59
+	new cases vs. delta new cases	0.90
+
+
 
