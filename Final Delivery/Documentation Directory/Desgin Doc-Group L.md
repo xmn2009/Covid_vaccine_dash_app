@@ -49,16 +49,16 @@ We will create a web application, so the user could explore the analysis result 
 
 ### 4.1 Architectural Design
 
-![architecture](../images/architecture-GroupL.png)
+![architecture-GroupL.png](../images/architecture-GroupL.png)
 
 ### 4.2 Use Cases:
 
-![use_case](../images/useCase-GroupL.png)
+![useCase-GroupL.png](../images/useCase-GroupL.png)
 
 
 ### 4.3 Page mockup
 
-![use_case](../images/mockups-GroupL.png)
+![mockups-GroupL.png](../images/mockups-GroupL.png)
 
 ## 5. Deployment
 
