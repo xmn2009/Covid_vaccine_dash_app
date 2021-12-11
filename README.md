@@ -46,11 +46,11 @@ Initial load might take some time, as Heroku free account is used.
 3 [Documentation Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Documentation%20Directory)
 
 ## 5.5 Documentations
-1 [Final Gantt Chart-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Final%20Gantt%20Chart.md)
+1 [Final Gantt Chart-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Final%20Gantt%20Chart-Group%20L.md)
 
-2 [User Manual-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Application%20Manual.md)
+2 [User Manual-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Application%20Manual-Group%20L.md)
 
-3 [Special Instructions of deployment-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions.md)
+3 [Special Instructions of deployment-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions-Group%20L.md)
 
 4 [Sprint Summary #1-9-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Research%20Directory/Sprint%20Summary.md)
 
