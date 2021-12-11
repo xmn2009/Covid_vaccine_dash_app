@@ -115,11 +115,11 @@ The covid-19 data was collected from “Our World in Data” (Coronavirus Pandem
 -	The data for other variables are collected from a variety of sources (United Nations, World Bank, Global Burden of Disease, Blavatnik School of Government, etc.).
 
 ## Diagrams
-![architecture](../images/architecture.png)
+![oriArchitecture](../images/architecture-GroupL.png)
 
 Figure 1—	Web Application Architecture
 
-![use_case](../images/useCase.png)
+![orUseCase](../images/oriUseCase.png)
 
 Figure 2—	Use case diagram for web application
 
