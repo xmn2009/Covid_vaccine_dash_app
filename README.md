@@ -45,6 +45,8 @@ Initial load might take some time, as Heroku free account is used.
 
 3 [Documentation Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Documentation%20Directory)
 
+4 [Historal Files Directory](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/tree/master/Final%20Delivery/Research%20Directory/Historical%20files)
+
 ## 5.5 Documentations
 1 [Final Gantt Chart-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Final%20Gantt%20Chart-Group%20L.md)
 
@@ -52,14 +54,14 @@ Initial load might take some time, as Heroku free account is used.
 
 3 [Special Instructions of deployment-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Special%20Instructions-Group%20L.md)
 
-4 [Sprint Summary #1-9-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Research%20Directory/Sprint%20Summary.md)
+4 [Sprint Summary #1-9-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Research%20Directory/Sprint%20Summary-Group%20L.md)
 
-5 [Desgin Documentation](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Desgin%20Doc.md)
-	5.1 [Mockups-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/mockups.png) 
-	5.2 [Use Case Diagram-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
-	5.3 [Web Application Architecure-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase.png)
+5 [Desgin Documentation](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Desgin%20Doc-Group%20L.md)
+	5.1 [Mockups-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/mockups-GroupL.png) 
+	5.2 [Use Case Diagram-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/useCase-GroupL.png)
+	5.3 [Web Application Architecure-Group L](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/images/architecture-GroupL.png)
 
-6 [Testing Plan locally and remotely](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Testing%20Plan.md)
+6 [Testing Plan locally and remotely](https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021/blob/master/Final%20Delivery/Documentation%20Directory/Testing%20Plan-Group%20L.md)
 
 # 6. Installation and run locally
 
