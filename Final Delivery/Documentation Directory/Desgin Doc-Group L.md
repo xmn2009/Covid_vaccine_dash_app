@@ -53,7 +53,7 @@ We will create a web application, so the user could explore the analysis result 
 
 ### 4.2 Use Cases:
 
-![use_case](../images/oriUseCase-GroupL.png)
+![use_case](../images/UseCase-GroupL.png)
 
 
 ### 4.3 Page mockup
