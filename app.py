@@ -473,7 +473,7 @@ def updates(ctry, month, input_line, outcome, input_vtype, input_age):
                    {'label': '30-49 group', 'value': '30-49'},
                    {'label': '50-64 group', 'value': '50-64'},
                    {'label': '65-79 group', 'value': '65-79'},
-                   {'label': 'over 80 group', 'value': '80'}]
+                   {'label': 'over 80 group', 'value': '80+'}]
 
     if input_age == 'all_ages_adj':
         type_options = [{'label': 'All types', 'value': 'all_types'},
@@ -491,7 +491,7 @@ def updates(ctry, month, input_line, outcome, input_vtype, input_age):
                        {'label': '30-49 group', 'value': '30-49'},
                        {'label': '50-64 group', 'value': '50-64'},
                        {'label': '65-79 group', 'value': '65-79'},
-                       {'label': 'over 80 group', 'value': '80'}]
+                       {'label': 'over 80 group', 'value': '80+'}]
 
     elif input_vtype != 'all_types':
         age_options = [{'label': 'All ages group', 'value': 'all_ages_adj'}]
