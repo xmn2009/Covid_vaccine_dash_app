@@ -23,7 +23,7 @@ Initial load might take some time, as Heroku free account is used.
 # 5. Source Code
 
 ## 5.1 Git repo
-[Georgia Tech GitHub Repo]( https://github.gatech.edu/mxia38/groupL_dash_app_cs6440_Fall2021)
+[GitHub Repo](https://github.com/xmn2009/Covid_vaccine_dash_app)
 
 ## 5.2 File list
 
